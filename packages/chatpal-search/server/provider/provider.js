@@ -25,7 +25,7 @@ class ChatpalProvider extends SearchProvider {
 		});
 		this._settings.add('API_Key', 'string', '', {
 			enableQuery:[{
-				_id: 'Search.chatpalProvider.Backend',
+				_id: 'Search_chatpalProvider_Backend',
 				value: 'cloud',
 			}],
 			i18nLabel: 'Chatpal_API_Key',
@@ -33,7 +33,7 @@ class ChatpalProvider extends SearchProvider {
 		});
 		this._settings.add('Base_URL', 'string', '', {
 			enableQuery:[{
-				_id: 'Search.chatpalProvider.Backend',
+				_id: 'Search_chatpalProvider_Backend',
 				value: 'onsite',
 			}],
 			i18nLabel: 'Chatpal_Base_URL',
@@ -41,7 +41,7 @@ class ChatpalProvider extends SearchProvider {
 		});
 		this._settings.add('HTTP_Headers', 'string', '', {
 			enableQuery:[{
-				_id: 'Search.chatpalProvider.Backend',
+				_id: 'Search_chatpalProvider_Backend',
 				value: 'onsite',
 			}],
 			multiline: true,

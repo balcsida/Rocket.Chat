@@ -82,7 +82,7 @@ class SearchProviderService {
 
 			const self = this;
 
-			self.add('Search.Provider', 'defaultProvider', {
+			self.add('Search_Provider', 'defaultProvider', {
 				type: 'select',
 				values: Object.keys(providers).map((key) => ({ key, i18nLabel: providers[key].i18nLabel })),
 				public: true,
@@ -103,7 +103,7 @@ class SearchProviderService {
 							_options.enableQuery = _options.enableQuery || [];
 
 							_options.enableQuery.push({
-								_id: 'Search.Provider',
+								_id: 'Search_Provider',
 								value: key,
 							});
 
@@ -115,7 +115,7 @@ class SearchProviderService {
 
 		// add listener to react on setting changes
 		const configProvider = _.debounce(Meteor.bindEnvironment(() => {
-			const providerId = RocketChat.settings.get('Search.Provider');
+			const providerId = RocketChat.settings.get('Search_Provider');
 
 			if (providerId) {
 				this.use(providerId);// TODO do something with success and errors

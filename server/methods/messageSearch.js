@@ -25,7 +25,7 @@ Meteor.methods({
 			if (!Meteor.call('canAccessRoom', rid, currentUserId)) {
 				return result;
 			}
-		} else if (RocketChat.settings.get('Search.defaultProvider.GlobalSearchEnabled') !== true) {
+		} else if (RocketChat.settings.get('Search_defaultProvider_GlobalSearchEnabled') !== true) {
 			return result;
 		}
 
